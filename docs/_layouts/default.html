@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/task-vector-json/assets/css/styles.css" />
+    <link
+      id="light-theme"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css"
+      disabled
+    />
+    <link
+      id="dark-theme"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css"
+      disabled
+    />
+    <link
+      id="dark-mode-styles"
+      rel="stylesheet"
+      href="/task-vector-json/assets/css/dark-mode.css"
+      disabled
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="https://atari-monk.github.io/task-vector-json/"
+          >{{ site.title }}</a
+        >
+      </h1>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </header>
+    <main>{{ content }}</main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="/task-vector-json/assets/js/theme-manager.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        hljs.highlightAll()
+      })
+    </script>
+  </body>
+</html>
