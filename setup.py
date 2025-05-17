@@ -7,6 +7,7 @@ setup(
     install_requires=[],
     entry_points={
         "console_scripts": [
+            "project_cli=project.project_cli:app",
         ],
     },
     python_requires=">=3.7",

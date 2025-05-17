@@ -1,2 +1,5 @@
 setuptools
 pytest
+pydantic
+typer
+rich
